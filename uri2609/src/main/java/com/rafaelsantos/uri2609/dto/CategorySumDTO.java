@@ -7,7 +7,9 @@ public class CategorySumDTO {
 	private String name;
 	private Long sum;
 	
-	public CategorySumDTO() {}
+	public CategorySumDTO() {
+		
+	}
 
 	public CategorySumDTO(String name, Long sum) {
 		super();
@@ -34,5 +36,10 @@ public class CategorySumDTO {
 
 	public void setSum(Long sum) {
 		this.sum = sum;
+	}
+
+	@Override
+	public String toString() {
+		return "CategorySumDTO [name=" + name + ", sum=" + sum + "]";
 	}
 }
